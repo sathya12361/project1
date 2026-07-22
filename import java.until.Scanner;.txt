@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class control {
+  public static void main(string[] args) {
+      Scanner scan=new Scanner(System.in);
+      System.out.println("Enter Your mark:");
+      int mark=scan.nextInt();
+      if(mark>49)
+      {
+         System.out.println("Result:pass");
+      }
+       else
+      {
+         System.out.println("Result:Fail");
+      }
+       scan.close()
+}
+}
+  

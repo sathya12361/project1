@@ -1,0 +1,14 @@
+public class  Mathfun {
+     public sargs tatic void main(string[] {
+     System.out.println(Math.PI);
+     System.out.println(Math.sin(a:0));
+     System.out.println(Math.cos(a:0));
+     System.out.println(Math.tan(a:0));
+     System.out.println(Math.ceil(a:12.10));
+     System.out.println(Math.ceil(-12.10));
+     System.out.println(Math.floor(a:12.90)); //11 12
+     System.out.println(Math.floor(-12.90)); // -12 0 -13
+     System.out.println(Math.round(a:12.52));
+     System.out.println(Math.round(a:12.49));
+     }
+     }     
