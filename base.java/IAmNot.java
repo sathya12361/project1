@@ -1,15 +1,17 @@
 import java.util.Scanner;
 
-public class Email {
-    public static void main(String[] args) {
+public class IAmNotHapp
+{
+    public static void main(String[] args)
+    {
     Scanner sc = new Scanner(System.in);
-    System.out.print("Enter Email: ");
+    System.out.print("I am not happy: ");
     String s = sc.nextLine();
-    int alpha = 0, num = 0, special = 0;
+    int I= 0, am= 0, not = 0, happy = 0;
 
         int i = 0;
 
-        while (i < s.length()) 
+        while (i < name.length()) 
         { 
 
             char ch = s.charAt(i);
