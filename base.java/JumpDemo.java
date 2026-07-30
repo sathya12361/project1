@@ -2,10 +2,10 @@
     public static void main(String[] args) {
         for(int i=5;i<=40;i++)
         {
-            System.out.print(" "+i);
-            if(i<=30)
-            break;    
-              
+           System.out.print(" "+i); 
+           if(i==10 || i>20)
+           break;  
+
         }
         System.out.println("end");
     }       
