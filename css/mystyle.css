@@ -11,9 +11,10 @@ h2
 h3
 {
     background-color: green;
-    border:5px solid white;
+    border: 5px solid white;
 }
-
+*
 {
+    box-sizing: border-box;
     font-size: 45px;
 }
