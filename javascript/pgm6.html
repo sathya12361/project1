@@ -10,15 +10,20 @@
         var n1=document.getElementById("t1").value;
         var n2=document.getElementById("t2").value;
         var tot=parseInt(n1)+parseInt(n2);
-        alert("Total:"+tot); 
+       // alert("Total:"+tot); 
+       //document.write("<br>Totel :"+tot);
+        document.write("<br>Totel : "+tot);
+        document.getElementById("res").innerHTML="Totel:"+tot;
      }
      </script>
      </head>
-     <body>
+     <body> 
         <input type="text" id="t1" placeholder="Enter no.1">
         <br>
         <input type="text" id="t2" placeholder="Enter no.2">
         <br>
         <input type="button" value="Find Total" onclick="ftotal()">
+        <br>
+        <div id="res"></div>
      </body>
 </html>

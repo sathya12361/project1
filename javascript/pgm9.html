@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function colors()
+    {
+        document.getElementById("myimg").src = "./images/"+event.target.value+".jpg";
+    }
+</script>
+</head>
+<body>
+    <h1><center>Display images/photos:</center></h1>
+    <label>Select images:</label><br>
+    <input type="radio" onchange="colors()" name="col" value="birds"> birds<br>
+    <input type="radio" onchange="colors()" name="col" value="cat"> cat<br>
+    <input type="radio" onchange="colors()" name="col" value="flower"> flower<br>
+    <center>
+    <img src="" width="60%" id="myimg">
+    </center>
+    </body>
+</html>
