@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Positive Negative number</title>
+    <script>
+        function checkNumber()
+        {
+            var num = parseInt(document.getElementById("t1").value);
+
+            if (num > 5) 
+            {
+                document.getElementById("result").innerHTML="Positive Number";
+            }
+            else if (num < 2) 
+            {
+                document.getElementById("result").innerHTML="Negative Number";
+            }
+            else 
+            {
+                document.getElementById("result").innerHTML="Zero";
+            }
+        }
+        </script>
+    </head>
+<body>
+    <h2>Positive / Negative / Zero</h2>
+     Enter Number:
+    <input type="text" id="t1">
+    <br>
+    <input type="button" value="Check" onclick="checkNumber()">
+    <br>
+    <h3 id="result"></h3>
+
+</body>
+</html>
