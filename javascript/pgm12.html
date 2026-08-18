@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Image</title>
+
+    <script type="text/javascript">
+
+        function show()
+        {
+            var sname = document.getElementById("t1").value;
+
+            switch(sname)
+            {
+                case "birds":
+                    document.getElementById("myimg").src = "./images/birds.jpg";
+                    break;
+
+                case "cat":
+                    document.getElementById("myimg").src = "./images/cat.jpg";
+                    break;
+
+                case "flower":
+                    document.getElementById("myimg").src = "./images/flower.jpg";
+                    break;
+
+                default:
+                    document.getElementById("myimg").src = "./images/eyeclose.png";
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <input id="t1" type="text" placeholder="Enter birds/cat/flower"
+           onblur="show()">
+
+    <br><br>
+
+    <img src="./images/birds.jpg" id="myimg" width="80%">
+
+</body>
+</html>
