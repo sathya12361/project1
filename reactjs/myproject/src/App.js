@@ -1,4 +1,139 @@
 import React from 'react'
+function App() {
+  var stud={
+    sno:1001,
+    sname:'sathya',
+    marks:{tamil:99,
+      english:40,
+      maths:100,
+      science:88,
+      social:68
+    },
+    rank:2,
+    result:"pass"
+
+  }
+  return (
+    <div>
+      <h1>JSON</h1>
+      <h2>student number:{stud.sno}</h2>
+      <h2>student name:{stud.sname}</h2>
+      <h2>student tamil mark:{stud.marks["tamil"]}</h2>
+      <h2>student english mark:{stud.marks['english']}</h2>
+      <h2>student maths mark:{stud.marks.maths}</h2>
+      <h2>student science mark:{stud.marks.science}</h2>
+      <h2>student social mark:{stud.marks.social}</h2>
+      <h2>student rank:{stud.rank}</h2>
+      <h2>student result:{stud.result}</h2>
+      
+      
+    </div>
+  )
+}
+
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+import React from 'react'
+function App() {
+  var stud={
+    sno:1001,
+    sname:"sathya",
+    mark:99,
+    rank:2,
+    result:"pass"
+  }
+  return (
+    <div>
+      <h1>JSON</h1>
+      <h2>student number:{stud.sno}</h2>
+      <h2>student name:{stud.sname}</h2>
+      <h2>student mark:{stud.mark}</h2>
+      <h2>student rank:{stud.rank}</h2>
+      <h2>student result:{stud.result}</h2>
+    </div>
+  )
+}
+
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+import React from 'react';
+
+function App() {
+  var arr = [11, 22, 33, 44, 55, 66, 77, 88, 99,110,112,334,56,19,13];
+
+  var big = arr[0];
+  
+  return (
+    <div>
+      <h1>Array Demo</h1>
+
+      {arr.map((item) => item)}
+      <br />
+
+      {arr.map((item) => <>{item}</>)}
+
+      {arr.map((item) => <><br />{item}</>)}
+
+      <ol type="A">
+        {arr.map((v) => <li>{v}</li>)}
+      </ol>
+
+      <br />
+
+      <h1>Highest Number in Array:</h1>
+
+      <h1>Biggest Number: {big}</h1>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+import React from 'react'
 
 function  App(){
 
