@@ -1,3 +1,151 @@
+function App(props) {
+
+  return (
+    <div>
+
+      <h1>JSON with Array Handling and also check null</h1>
+      <h2>Roll Number: {props.data.rno}</h2>
+      <h2>Name: {props.data.sname}</h2>
+      <h2>Mark 1: {props.data.marks[0]}</h2>
+      <h2>Mark 2: {props.data.marks[1]}</h2>
+      <h2>Mark 3: {props.data.marks[2]}</h2>
+      <h3>Result:{(props.data.marks[0] > 34 && props.data.marks[1] > 34 &&
+          props.data.marks[2] > 34)? "PASS":"FAIL"}</h3>
+
+    </div>
+  )
+}
+
+  export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import React from 'react'
+
+export default function App(props) {
+  
+  var arr=[]
+  for(var k in props.data)
+  {
+    arr.push(k)
+  }
+
+  return (
+    <div>
+      <h1>props using JSON data</h1>
+
+      <h2>Roll No: {props.data.rno}</h2>
+      <h2>Name: {props.data.sname}</h2>
+      <h2>Mark: {props.data.mark}</h2>
+      <h2>Result: {props.data.mark>=35?"pass":"fail"}</h2>
+      <h2>is eligible to study: {props.data.iseligible?"eligible":"not eligible"}</h2>
+
+      <br></br>
+      <h2>============================================================</h2>
+      {arr.map((v)=><h2>{v}----&gt; {props.data[v]}</h2>)}
+      <h2>==================extra=============================</h2>
+      {arr.map((v)=><h2>{v}----&gt; {(props.data[v]===true &&
+        "Eligible") || (props.data[v]===false && "Not Eligible") || 
+        props.data[v]}</h2>)}
+      
+    
+    </div>
+  )
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+import React from 'react';
+
+function App(props) {
+  return (
+        
+          sno={1001}
+          sname="Sathya"
+           marks=
+          tamil: 99,
+          english: 40,
+          maths: 100,
+          science: 88,
+          social: 68
+
+     <div>
+      <h1>Student Details</h1>
+
+      <h2>Student Number: {props.sno}</h2>
+      <h2>Student Name: {props.sname}</h2>
+
+      <h2>{props.marks.tamil}</h2>
+      <h2>{props.marks.english}</h2>
+      <h2>{props.marks.maths}</h2>
+      <h2>{props.marks.science}</h2>
+      <h2>Social: {props.marks.social}</h2>
+    </div>
+  );
+}
+
+export default App
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import React from 'react'
+function App(props) {
+
+return (
+  <div>
+    <h1>props: properties</h1>
+    <h2>share data from one Component to another Component</h2>
+    <h2>Your Name:{props.data}</h2>
+  </div>
+)
+}
+
+export default App
+
+
+
 import React from 'react'
 function App() {
   var stud={
@@ -48,7 +196,7 @@ export default App;
 
 
 
-/*
+
 import React from 'react'
 function App() {
   var stud={
@@ -86,7 +234,7 @@ export default App;
 
 
 
-/*
+
 import React from 'react';
 
 function App() {
@@ -132,7 +280,7 @@ export default App;
 
 
 
-/*
+
 import React from 'react'
 
 function  App(){
@@ -162,7 +310,7 @@ export default App;
 
 
 
-/*
+
 import React from "react";
 
 function App() {
@@ -193,7 +341,7 @@ export default App;
 
 
 
-/*
+
 import React from 'react'
 function App() {
 var n=-5
@@ -218,7 +366,7 @@ return (
 
 
 
-/*
+
 import React from 'react'
 
 function App() {
@@ -242,7 +390,7 @@ export default  App;
 
 
 
-/*
+
 import React from "react";
 
 function App() {
@@ -259,13 +407,13 @@ function App() {
   )
 }
 export default App;
-*/
+
   
 
 
 
 
-/*
+
 import React from "react";
 function App() {
 var mark = 35;
@@ -282,12 +430,12 @@ var mark = 35;
   )
 }
 export default App
-*/
 
 
 
 
-/*
+
+
 import React from "react"
 
 function App() {
@@ -304,7 +452,7 @@ return (
 }
 
 export default App
-*/
+
 
 
 

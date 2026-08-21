@@ -4,10 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//var stud={rno:1001,sname:"sathya",mark:99,result:"pass",iseligible:true}
+var stud={
+  rno:1001,
+  sname:"sathya",
+  marks:[99,77,99],
+  result:null
+
+}
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App data={stud} />
   </React.StrictMode>
 );
 
