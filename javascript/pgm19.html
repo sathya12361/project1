@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Demo</title>
+
+    <script type="text/javascript">
+
+        function show() {
+
+            var size = parseInt(document.getElementById("t1").value);
+
+            var arr = new Array(size);
+
+            // Get array values
+            for (var i = 0; i < size; i++) {
+                arr[i] = parseInt(prompt("Enter array value at index: " + i));
+            }
+
+            // array values
+            for (var i = 0; i < size; i++) {
+                document.write("<br>Value " + i + " = " + arr[i]);
+            }
+
+            // Sum of even numbers and count of odd numbers
+            var esum = 0;
+            var codd = 0;
+
+            for (var i = 0; i < size; i++) {
+
+                if (arr[i] % 2 === 0) 
+                {
+                    esum = esum + arr[i];
+                }
+                else 
+                {
+                    codd++;
+                }
+            }
+
+            document.write("<br>Sum of even numbers: " + esum);
+            document.write("<br>Count of odd numbers: " + codd);
+
+            // Ascending order
+            var temp = 0;
+
+            for (var i = 0; i < size; i++) 
+            {
+                
+                for (var j = i + 1; j < size; j++) 
+                {
+
+                    if (arr[i] > arr[j]) 
+                    {
+
+                        temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
+                }
+            }
+
+            // ascending order
+            document.write("<br><br>Ascending Order:");
+
+            for (var i = 0; i < size; i++) {
+                document.write("<br>Value " + i + " = " + arr[i]);
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+    Enter Array Size:
+    <input type="text" id="t1">
+
+    <br><br>
+
+    <button onclick="show()">Array Demo</button>
+
+</body>
+
+</html>
