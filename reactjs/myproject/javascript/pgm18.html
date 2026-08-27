@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function show()
+        {
+          //  var arr=[10,20,30,40,1,9,88,33];
+          // or
+          var arr=new Array(10,20,30,40,100,200,300,400,500);
+
+            document.write("value0:"+arr[0]);
+            document.write("value1:"+arr[1]);
+            document.write("value2:"+arr[2]);
+            document.write("value3:"+arr[3]);
+            document.write("value4:"+arr[4]);
+            document.write("value5:"+arr[5]);
+
+            var len=arr.length;
+            for(var i=0;i<len;i++)
+        {
+            document.write("<br> value "+i+" = "+arr[i]);
+        }
+
+        }
+        </script>
+</head>
+<body>
+    <button onclick="show()"">array demo</button>
+</body>
+</html>

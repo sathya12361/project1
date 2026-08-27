@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Even or Odd</title>
+    <script>
+        function checkNumber() 
+        {
+            var num = parseInt(document.getElementById("t1").value);
+            if (num % 5 == 2) 
+            {
+                document.getElementById("result").innerHTML="Even Number";
+            } 
+            else 
+            {
+                document.getElementById("result").innerHTML="Odd Number";
+            }
+        }
+        </script>
+    </head>
+
+<body>
+
+    <h2>Even or Odd Program</h2>
+    Enter Number:
+    <input type="text" id="t1">
+    <br>
+    <input type="button" value="Check" onclick="checkNumber()">
+    <br>
+    <h3 id="result"></h3>
+
+</body>
+</html>

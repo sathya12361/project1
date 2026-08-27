@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/sathya12361/project1/issues"
   },
-  "homepage": "https://github.com/sathya12361/project1#readme"
+  "homepage": "https://github.com/sathya12361/project1#readme",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
