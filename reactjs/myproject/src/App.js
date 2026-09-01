@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import { useState } from 'react'
 function App() {
-  const[city,setCity]=useState("salam")
+  const[city,setCity]=useState("salem")
   const[result,setResult]=useState(null);
   
   const cityFun=(Event)=>{
@@ -36,7 +36,7 @@ function App() {
       {result!==null && result.cod===200 &&<> <h2> Description:{result.weather[0].description}</h2></>}
       {result!==null && result.cod===200 &&<> <h2> Wind speed:{result.wind.speed}</h2></>}
       {result!==null && result.cod===200 &&<> <h2> Temperature:{result.main.temp}</h2></>}
-      {result!==null && result.cod===200 &&<> <h2> Hummidity:{result.main.hummidity}</h2></>}
+      {result!==null && result.cod===200 &&<> <h2>Humidity: {result.main.humidity}%</h2></>}
       {result!==null && result.cod===200 &&<> <h2> sea_level:{result.main.sea_level}</h2></>}
       {result!==null && result.cod===200 &&<> <h2> co-ord(lat lon):{result.coord.lat}{result.coord.lon}</h2></>}
       {result!==null && result.cod==="404" && <font color='red' size='5'><b>Result:{result.message}</b></font>}
