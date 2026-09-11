@@ -20,5 +20,9 @@
   "homepage": "https://github.com/sathya12361/project1#readme",
   "devDependencies": {
     "gh-pages": "^6.3.0"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongodb": "^7.6.0"
   }
 }
