@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Details</title>
+</head>
+
+<body>
+
+    <h1 th:text="${name}"></h1>
+    <h2 th:text="${age}"></h2>
+    <h3 th:text="${city}"></h3>
+
+    <h1>Welcome To View in MVC</h1>
+
+    Student Name:<input th:value="${name}" type="text" placeholder="data from controller"><br>
+    Student Age:<input th:value="${age}" type="text" placeholder="data from controller"><br>
+    Student City:<input th:value="${city}" type="text" placeholder="data from controller"><br>
+    
+    <a th:href="@{/sa/v3}">Display Student Name and Age List</a>
+    <a th:href="@{/sa/v5}">Test Student Age adult or Minor</a>
+
+</body>
+</html>

@@ -57,6 +57,38 @@ public String showArgs(@PathVariable Long id)
     return "<h1>Your URL runtime data:"+data+"</h1>";
 }
 
+@GetMapping("/objdata")
+public String showObjectData()
+{
+	    Person p1 = new Person("sathya", 20);
+	    Person p2 = new Person("sathi", 21);
+	    Person p3 = new Person("priya", 22);
+	    Person p4 = new Person("jeeva", 21);
+	    Person p5 = new Person("kerthika", 20);
+
+	  /*  String data1 = p1.getSname() + "--------->" + p1.getAge();
+	    String data2 = p2.getSname() + "--------->" + p2.getAge();
+	    String data3 = p3.getSname() + "--------->" + p3.getAge();
+	    String data4 = p4.getSname() + "--------->" + p4.getAge();
+	    String data5 = p5.getSname() + "--------->" + p5.getAge();
+	    */
+	    Person p[] = {p1, p2, p3, p4, p5};
+
+	    String ans = "<table border='4' cellpadding='5' bgcolor='cyan' align='center'>"
+	               + "<tr><th>SNo</th><th>Student Name</th><th>Age</th></tr>";
+
+	    for(int i = 0; i < p.length; i++)
+	    {
+	        ans = ans + "<tr><td>" + (i + 1) + "</td><td>"
+	             + p[i].getSname() + "</td><td>"
+	             + p[i].getAge() + "</td></tr>";
+	    }
+
+	    ans = ans + "</table>";
+
+	    return ans;
+}
+
 }
 
 

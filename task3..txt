@@ -1,0 +1,3 @@
+test("divide by zero should throw an error", () => {
+    expect(() => divide(10, 0)).toThrow("Cannot divide by zero");
+});

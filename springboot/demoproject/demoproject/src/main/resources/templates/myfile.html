@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>ThymeLeaf Loop</title>
+</head>
+
+<body>
+
+<h1>ThymeLeaf Loop - th:each</h1>
+
+<table border="1">
+
+    <tr>
+        <th>Person Name</th>
+        <th>Person Age</th>
+    </tr>
+
+    <tr th:each="item:${Personslist}">
+        <td th:text="${item.sname}"></td>
+        <td th:text="${item.age}"></td>
+    </tr>
+
+</table>
+
+</body>
+</html>
